@@ -197,10 +197,10 @@ void Snake::displayGameOver() const
     // 显示 Game Over 图片
     BMP("./images/game_over.bmp").draw();
     // 暂停 3 秒
-    std::this_thread::sleep_for(std::chrono::seconds(3));
+    // std::this_thread::sleep_for(std::chrono::seconds(3));
     // 跳转到开始界面
     // Game().showstart();
     // 重启进程
-    std::system("./a.out &"); // 假设可执行文件名为 game_app
+    // std::system("./a.out &"); // 假设可执行文件名为 game_app
     std::exit(0);               // 结束当前进程
 }
